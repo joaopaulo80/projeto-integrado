@@ -1,0 +1,36 @@
+/* Seletores e Agrupamentos */
+
+/*
+
+* {Seletor universal: Aplica a todos os elementos }
+
+p {Seletor Tipo: Selecionar todas as tags <p> }
+
+.alerta {Seletor Classe: Seleciona todos os class="alerta"}
+
+#principal {Seletor ID: Seleciona o elemento com id="principal"}
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    color:black;
+}
+
+h1{
+    color:black;
+}
+
+.alerta{
+    color: rgb(255, 0, 0) (0, 154, 39);
+}
+
+#principal {
+    background-color: aquamarine;
+    color: azure;
+}
