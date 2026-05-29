@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    background: #ff3c3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* BANNER */
+.banner {
+    text-align: center;
+    padding: 60px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+.banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #ff3c3c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* PRODUTOS */
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px;
+    background: #ff3c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+
+
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* LOGIN */
+
+.login-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ff3c3c;
+}
+
+.login-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:300px;
+    text-align:center;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+.login-box button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#ff3c3c;
+    color:white;
+    cursor:pointer;
+}
+
+/* HEADER */
+
+header{
+    background:#ff3c3c;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.cart-icon{
+    cursor:pointer;
+    font-size:20px;
+}
+
+/* BANNER */
+
+.banner{
+    text-align:center;
+    padding:50px 20px;
+    color:white;
+    background:linear-gradient(to right,#ff3c3c,#ff7b00);
+}
+
+/* PRODUTOS */
+
+.produtos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.card button{
+    margin:15px;
+    padding:10px;
+    border:none;
+    background:#ff3c3c;
+    color:white;
+    width:80%;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+/* CARRINHO */
+
+.carrinho{
+    position:fixed;
+    right:-400px;
+    top:0;
+    width:350px;
+    height:100%;
+    background:white;
+    padding:20px;
+    transition:0.5s;
+    box-shadow:-4px 0 10px rgba(0,0,0,0.2);
+}
+
+.carrinho.ativo{
+    right:0;
+}
+
+.carrinho ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.carrinho li{
+    margin:10px 0;
+}
+
+.carrinho button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    background:#ff3c3c;
+    color:white;
+    cursor:pointer;
+}
+
+.fechar{
+    background:#555 !important;
+}
+
+/* PAGAMENTO */
+
+.pagamento{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.pagamento-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.pagamento-box select,
+.pagamento-box button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:20px;
+    }
+
+    .banner h2{
+        font-size:25px;
+    }
+
+    .carrinho{
+        width:100%;
+    }
+}
+}
