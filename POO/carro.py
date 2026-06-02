@@ -1,53 +1,79 @@
-# A palavra "class" é usada para criar uma classe. 
+# A palavra "class" é usada para criar uma classe.
 # Uma classe funciona como um molde para criar objetos
 class Carro:
 
-#"def" definir uma função ou método
-# "__init__" é o método construtor da classe.
-# Ele é executado automaticamente quando um objeto é criado
+    # Método Construtor
+    def __init__(self, marca, modelo, ano, velocidade=0):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+        self.velocidade = velocidade
 
-# "self" representa o própio objeto.
-# É através do self que acessamos atributos e métodos do objeto
+    # Métodos
+    # Método acelerar
+    def acelerar(self, aumento):
+        self.velocidade += aumento
+        print(f"O carro acelerou para {self.velocidade} km/h")
 
-# "marca" , "modelo" , "ano" , e "velocidade"
-# São Parãmentros recebidos pela classe.
+     #Metodo frear
+    def frear(self, reducao):
+        # self.velocidade = self.velocidade - reducao 
+        self.velocidade -= reducao
 
-   # método Contrutor
-    def __init__ (self, marca, modelo, ano, velocidade=0):
-      self.marca = marca
-      self.modelo = modelo
-      self.ano = ano
-      self.velocidade = velocidade 
+        print(f"O carro freou para {self.velocidade} km/h")
 
-   # Métodos
-   # método acelerar
-   def acelerar(serf, aumento)
-     # serf.velocidade = self.velocidade + aumento
-       serf.velocidade += aumento
+    # Método para exibir informações
+    def exibir_info(self):
+        print("=== INFORMAÇÕES DO CARRO ===")
 
-       print(f"O carro acelerou para {serf.velocidade} km/h")
+        # Exibe os atributos do objeto
+        print(f"Marca: {self.marca}")
+        print(f"Modelo: {self.modelo}")
+        print(f"Ano: {self.ano}")
+        print(f"Velocidade Atual: {self.velocidade}")
 
 
-    # Criando um objeto da Classe Carro
-    
-    # carro1 é uma variável que recebe um objeto 
+# Criando um objeto da Classe Carro
+# "carro1" é uma variável que recebe um objeto
 carro1 = Carro("Chevrolet", "S10", 2013)
 
-# Exibir informações do carro
-print(f"Marca: {carro1.marca}")
-print(f"Modelo: {carro1.modelo}")
-print(f"Ano: {carro1.ano}")
-print(f"Ano: {carro1.velocidade}")
+carro1.acelerar(50)
+carro1.frear(20)
 
+
+
+# Criando um objeto da Classe Carro
+
+# "carro1" é uma variável que recebe um objeto
+carro1 = Carro("Chevrolet", "S10", 2013)
+
+# Chamando os métodos
+
+# O valor 50 será enviado para o parâmetro "aumento"
 carro1.acelerar(50)
 
+# O valor 20 será enviado para o parâmetro "redução"
+# carro1.frear(reducao)
+carro1.frear(20)
 
-carro2 = Carro("FIT", "UNO", 2009)
-print(f"Marca: {carro2.marca}")
-print(f"Modelo: {carro2.modelo}")
-print(f"Ano: {carro2.ano}")
+# Exibindo as informações do carro
+carro1.exibir_info()
 
-carro3 = Carro("Ford", "F250", 2008)
-print(f"Marca: {carro3.marca}")
-print(f"Modelo: {carro3.modelo}")
-print(f"Ano: {carro3.ano}")
+
+
+
+# # # "carro2" é uma variável que recebe um objeto
+# carro2 = Carro("FIAT", "Uno", 2000)
+
+# # # Exibir informações do carro 2
+# print(f"Marca: {carro2.marca}")
+# print(f"Modelo: {carro2.modelo}")
+# print(f"Ano: {carro2.ano}")
+
+
+
+
+
+
+
+
