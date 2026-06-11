@@ -192,3 +192,60 @@ ON DELETE RESTRICT;
 
 -- Apaga o Banco de Dados
 DROP DATABASE IF EXISTS escola;
+
+Tabela escola.alunos
+"Professores"
+SELECT *
+FROM professores;
+
+WHERE nome = 'Mateus';
+WHERE id_professores = 4;
+
+UPDATE professores
+SET telefone = '(63)98888-1111'
+WHERE id_professor = 1;
+
+DELETE FROM Professores
+WHERE id_professores = 4;\   
+
+
+
+"Cursos"
+SELECT *
+FROM cursos
+
+UPDATE professores
+SET carga_horaria = '1400'
+WHERE id_curso = 1;
+
+"Disciplina"
+SELECT *
+FROM disciplinas;
+
+UPDATE professores
+SET especialidade = 'Matemática'
+WHERE id_professor = 4;
+
+DELETE FROM
+WHERE id_disciplina = 4; 
+
+"Alunos"
+SELECT *
+FROM alunos;
+
+WHERE nota > 8;
+WHERE nome 'Mateus Rodrigues';
+
+DELETE FROM alunos
+WHERE id_alunos = 2;
+
+"Turmas"
+DELETE FROM turmas
+WHERE id_turmas = 1;
+
+
+
+
+
+
+
