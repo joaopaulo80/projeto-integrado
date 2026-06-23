@@ -104,3 +104,40 @@ VALUES
 
 -- Selecionar todos os gêneros
 SELECT * FROM generos;
+-- Selecionar todos os livros
+SELECT * FROM Livros;
+
+-- Selecionar todos os autores
+SELECT * FROM autores;
+
+-- Selecionar todos os clientes
+SELECT * FROM Clientes;
+
+-- Selecionar todos os relacionamentos entre livro, autor e gênero
+SELECT * FROM livro_autor_genero;
+
+-- =========================================================
+-- UPDATE
+-- =========================================================
+
+-- Alterando o título do livro
+UPDATE livros
+SET titulo = 'Dom Casmurro'
+WHERE id_livro = 1;
+
+-- Atualizando a descrição de um livro
+UPDATE livros
+SET descricao = 'Romance clássico de Machado de Assis, edição revisada e comentada.'
+WHERE id_livro = 2;
+
+-- Verificando as alterações
+SELECT * FROM livros;
+
+-- =========================================================
+-- DELETE
+-- =========================================================
+
+-- Removendo um livro da biblioteca
+DELETE FROM livros
+WHERE id_livro = 2;
+
